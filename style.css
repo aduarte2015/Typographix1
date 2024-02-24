@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@100;400;700&display=swap');
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: 'Jost', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Additional CSS for header */
+header {
+   position: absolute;
+   top: 50%;
+   transform: translateY(-50%);
+   width: 100vw;
+   text-align: center;
+}
+
+.header h1 {
+    font-size: 50px;
+    font-weight: 500;
+    font-style: italic;
+    animation: focus-in-contract 3s linear;
+}
+
+@keyframes focus-in-contract {
+    0% {
+        letter-spacing: 1em;
+        filter: blur(12px);
+        opacity: 0;
+    }
+
+    100% {
+        letter-spacing: 0;
+        filter: blur(0);
+        opacity: 1;
+    }
+}
+
+.social-media-icons {
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.social-media-icons i {
+    margin: 0 10px;
+    animation: focus-in-contract 3s linear;
+    cursor: pointer;
+}
+
+.social-media-icons i:hover {
+    transform: scale(1.1);
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    background-color: #f0f0f0; 
+}
